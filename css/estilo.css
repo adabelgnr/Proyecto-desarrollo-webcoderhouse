@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+/*Estilos header*/
+
+/*Estilos menu desplegable*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+#encabezado{
+    display:flex ;
+    background-color:white;   
+    
+   
+}
+
+nav{
+    display: flex;
+	max-width: 100%;
+	margin: auto;
+    background-color: white;
+	font-size: 20px;
+	margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+       
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: end;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: #5e9188;
+	
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: #5e9188;
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color:gray;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+main{
+   
+    flex-wrap: wrap;
+}
+video-inicio{
+	width: 100%;
+    flex-wrap: wrap;
+}
+body{
+	
+	background-size: cover;
+   
+    flex-wrap: wrap;
+}
+
+li a{ 
+    color:black;
+}
+/*ESTILO IMAGENES MARCAS*/
+#imagenes-marcas{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+/*Estilos articulos*/
+article{
+    
+    flex-wrap: wrap;
+}
+
+/*Estilos footer*/
+ul{ 
+    list-style: none;
+}
+#footer {
+    border-top: 2px solid #000;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+   
+    /* margin-top: 3rem;
+    margin-bottom: 2rem; */
+    /* gap: 2rem; */
+    flex-wrap: wrap;
+}
+/*  */
+
+#footer p {
+    font-size: 1rem;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  
+}
+.contacto{
+    display: flex;
+    justify-content: end;
+    flex-direction: column; 
+
+}
+.contacto{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.mapa {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    justify-content:left;
+}
+
+/*Estilos page productos */
+#articulosp{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.titulos{
+    font-size: larger;
+    /*El color rojo era para probar si podia cambiar todos a la vez*/
+    color:red;
+
+}
+.parrafos{ 
+    font-size: medium;
+}
+
+/*Estilos pag empresa */
+
+
+.tituloe{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    
+}
+
+.parrafoe{
+      font-style: oblique;
+      
+}
+/*Estilos industria */
+.tituloi{
+    text-decoration: underline;
+}
+
+
+#contenerdor-secciones{
+	color: blueviolet;
+	
+	display: flex;
+	/*alinear horizontalmente*/
+	justify-content: space-between;
+	align-items: center;
+}
