@@ -11,6 +11,7 @@ html {
     font-size: 62.5%;
 }
 
+/*ESTILOS INDEX*/
 #encabezado{
     display:flex ;
     flex-wrap: wrap;  
@@ -56,13 +57,16 @@ nav{
 	width: 200px;
 	background-color: #5e9188;
     height: auto;
+    text-decoration: none;
 }
+
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
 }
 .menu-vertical li:hover{
 	background-color:gray;
 }
+*/
 
 .menu-vertical li a{
 	display: block;
@@ -70,7 +74,7 @@ nav{
 	text-decoration: none;
 	padding: 15px 15px 15px 20px;
 }
-
+*/
 main{
    
     flex-wrap: wrap;
@@ -93,7 +97,6 @@ main{
 body{
 	
 	background-size: cover;
-   
     flex-wrap: wrap;
 }
 
@@ -168,20 +171,21 @@ ul{
     height: 100%;
     justify-content:left;
 }
-/*Estilo paginas contacto*/
-.mapa-banner{
+/*ESTILOS PAGINA CONTACTO*/
+#seccion-contacto{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 315px;
-    margin-bottom: 3rem;
-
+    justify-content: space-around;
 }
-#formulario{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: large;
-
+.mapa-banner{
+  
+    width: 700px;
+    height: 350px;
+    padding: 3rem;
+}
+.formulario{
+       font-size: large;
+       padding: 3rem;
 }
 .contactanos{
     text-decoration: underline;
@@ -192,25 +196,16 @@ ul{
 }
     
 
-/*Estilos page productos */
-#articulosp{
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-    
+
+
+/*ESTILOS PAGINA EMPRESA */
+
+.banner-empresa{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 315px;
 }
-.titulos{
-    font-size: larger;
-    /*El color rojo era para probar si podia cambiar todos a la vez*/
-    color:red;
-
-}
-.parrafos{ 
-    font-size: medium;
-}
-
-/*Estilos pag empresa */
-
-
 .tituloe{
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
@@ -221,17 +216,15 @@ ul{
       font-style: oblique;
       
 }
-/*Estilos industria */
-.tituloi{
-    text-decoration: underline;
+
+/*ESTILOS INDUSTRIAS*/
+.card-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
 }
-
-
-#contenerdor-secciones{
-	color: blueviolet;
-	
-	display: flex;
-	/*alinear horizontalmente*/
-	justify-content: space-between;
-	align-items: center;
+.titulo-industrias{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    text-decoration: underline;
+    text-align: center;
 }
