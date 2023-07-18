@@ -18,37 +18,41 @@
         </a>
 
 
-        <nav>
-
-            <ul class="menu-horizontal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li>
-                </li>
-
-                <li><a href="../pages/empresa.html">Empresa</a></li>
-                <li>
-                    <a href="../pages/productos.html">Productos</a>
-                    <ul class="menu-vertical">
-                        <li> <a href="">Guantes</a></li>
-                        <li> <a href="">Indumentaria</a></li>
-                        <li> <a href="">Auditiva</a></li>
-                        <li> <a href="">Limpieza</a></li>
-                        <li> <a href="">Ergonomicos</a></li>
-                        <li> <a href="">Facial</a></li>
-                        <li> <a href="">Ocular</a></li>
-                        <li> <a href="">Altura</a></li>
-                        <li> <a href="">Calzado</a></li>
-
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="../pages/empresa.html">Empresa</a>
+                  </li>
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/guantes.html">Guantes</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                      <li><a class="dropdown-item" href="#">Auditiva</a></li> -->
                     </ul>
-                </li>
-
-                <li>
-                    <a href="../pages/industrias.html">Industrias</a>
-                   
-                </li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/industrias.html">Industrias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+      
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
@@ -58,8 +62,73 @@
     </main>
     <!-- Fin de banner  -->
 
+    <!-- INICIO DE SECCIONES/CARDS-->  
 
-    <!-- Inicio Secciones -->
+    <section class="seccion">
+      
+      
+        <div class= "card-group mt-5 gap-1">
+            <div class="col">
+                <div class="card">
+                    <img src="../img/plantas.industriales.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Plantas industriales</h1>
+                        <p class="card-text">Guante tejido de algodón y poliéster G7 moteado en P.V.C.</p>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/limpieza.urbana.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Limpieza urbana</h1>
+                        <p class="card-text">Guante tejido de algodón y poliéster G7 moteado en P.V.C.</p>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/industrias.alimenticias.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Industrias alimenticias </h1>
+                        <p class="card-text">Guante tejido de algodón y poliéster G7 moteado en P.V.C.</p>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/comercios.minoristas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Comercios minoristas </h1>
+                        <p class="card-text">Guante tejido de algodón y poliéster G7 moteado en P.V.C.</p>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        
+        </div>
+        
+                </section>
+        
+        
+
+
+    <!-- Inicio Secciones 
 
     <section class="container mt-5">
         <article class="row gap-3 p-2 justify-content-center">
@@ -102,7 +171,7 @@
 
     </section>
 
-
+-->
 
     <!-- Inicio footer -->
     <footer id="footer">
@@ -114,22 +183,26 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-            <div class="redes">
-                <ul class="lcontacto">
-                    <h2 class="contacto">Contacto</h2>
-                    <li>
+                <div class="redes">
+                    <ul class="lcontacto">
+                      <h2 class="contacto">Contacto</h2>
+                      <li>
+                        <img class="icono-footer" src="../img/ubicacion.png" alt=""> 
                         <h3 class="direccion">Alvear 2972, Remedios de Escalada</h3>
-                    </li>
-
-                    <li>
+                      </li>
+            
+                      <li>
+                        <img class="icono-footer" src="../img/llamada.png" alt="">
                         <h3 class="telefono">4246-0181</h3>
-                    </li>
-
-                    <li>
+                      </li>
+            
+                      <li>
+                        <img class="icono-footer" src="../img/email.png" alt="">
                         <h3 class="email">surseg@yahoo.com</h3>
-                    </li>
-                </ul>
-            </div>
+                      </li>
+                    </ul>
+                  </div>
+            
 
         </div>
 

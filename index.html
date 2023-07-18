@@ -18,85 +18,123 @@
     </a>
 
 
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="/pages/empresa.html">Empresa</a>
+            </li>
 
-      <ul class="menu-horizontal">
-        <li><a href="./index.html">Inicio</a></li>
-        <li>
-        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/guantes.html">Guantes</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                <li><a class="dropdown-item" href="#">Auditiva</a></li> -->
+              </ul>
+            </li>
 
-        <li><a href="./pages/empresa.html">Empresa</a></li>
-        <li>
-          <a href="./pages/productos.html">Productos</a>
-          <ul class="menu-vertical">
-            <li> <a href="">Guantes</a></li>
-            <li> <a href="">Indumentaria</a></li>
-            <li> <a href="">Auditiva</a></li>
-            <li> <a href="">Limpieza</a></li>
-            <li> <a href="">Ergonomicos</a></li>
-            <li> <a href="">Facial</a></li>
-            <li> <a href="">Ocular</a></li>
-            <li> <a href="">Altura</a></li>
-            <li> <a href="">Calzado</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/industrias.html">Industrias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
 
+           
           </ul>
-        </li>
-
-        <li>
-          <a href="../pages/industrias.html">Industrias</a>
-       
-        </li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
+    
   </header>
 
 
-  <!-- Inicio video -->
+  <!-- Inicio carrusel -->
 
   <main>
 
-
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/f3lZzulFS9o" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-  </main>
-
-  <!-- Fin Video -->
-
-  <!-- Inicio Secciones -->
-
-  <section>
-
-    <div id="carouselExample" class="carousel slide container mt-5 mb-5">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/3M-logo.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./img/vista-frontal-gafas-protectoras-casco-auriculares.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-          <img src="./img/DuPont_logo_PNG3.png" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/casco-construccion-seguridad-vista-superior-mascara-medica.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-          <img src="./img/Gentex_Logo.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/logo-libus-2014.jpg" class="d-block w-100" alt="...">
-        </div>
-
+       
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+   
+ 
+  </main>
+
+  <!-- Fin carrusel -->
+
+  <!-- Inicio Secciones -->
+
+<section>
+  <div class="seccion-imagen">
+    <img class="imagentrabajador" src="./img/trabajador.jpg" alt="">
+    <h1 class="texto-seguridad">Especializados en seguridad</h1>
+  </div>
+
+
+
+  <article>
+    <h1 class="marcas"> Marcas que confian en nosotros</h1>
+  </article>
+  
+  <div class="logos-marcas">
+    <img class="img-marcas" src="./img/L-3m.jpeg" alt="">
+    <img class="img-marcas" src="./img/L-dupont.jpeg" alt="">
+    <img class="img-marcas" src="./img/L-gentex.jpeg" alt="">
+    <img class="img-marcas" src="./img/L-libus.jpeg" alt="">
+  </div>
+
+  <!-- <div id="carruselmarcas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="./img/L-3m.jpeg" class="d-block w-100" alt="3m">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/L-libus.jpeg" class="d-block w-100" alt="Libus">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/L-gentex.jpeg" class="d-block w-100" alt="gentex">
+      </div>
+     
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/L-dupont.jpeg" class="d-block w-100" alt="Dupont">
+      </div>
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
   </section>
-
-
+ 
 
   <!-- Inicio footer -->
   <footer id="footer">
@@ -111,14 +149,17 @@
         <ul class="lcontacto">
           <h2 class="contacto">Contacto</h2>
           <li>
+            <img class="icono-footer" src="./img/ubicacion.png" alt=""> 
             <h3 class="direccion">Alvear 2972, Remedios de Escalada</h3>
           </li>
 
           <li>
+            <img class="icono-footer" src="./img/llamada.png" alt="">
             <h3 class="telefono">4246-0181</h3>
           </li>
 
           <li>
+            <img class="icono-footer" src="./img/email.png" alt="">
             <h3 class="email">surseg@yahoo.com</h3>
           </li>
         </ul>

@@ -19,62 +19,70 @@ html {
     
    
 }
+.marcas{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    font-size: xx-large;
+    text-decoration:solid;
+    color:#000;
+    padding: 5rem;
+}
+.carruselmarcas{
+    width: 100%;
+    height: 450px;
+}
+
+
+.seccion-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.imagentrabajador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 600px;
+    height: 600px;
+    padding: 5rem;
+    
+}
+.logos-marcas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+.img-marcas{
+    width: 450px;
+    height: 315px;
+}
 /*Estilos menu desplegable*/
 nav{
     display: flex;
     flex-wrap: wrap;
 	max-width: 100%;
 	margin: auto;
-    background-color: white;
+    height: auto;
 	font-size: 20px;
 	margin-top: 50px;
     align-items: end;
-    justify-content: end;
-    height: auto;
-       
+    justify-content: end;       
 }
-.menu-horizontal{
-    display: flex;
-    flex-wrap: wrap;
-	list-style: none;
-	justify-content: end;
+.nav-item{
+    color: black;
+
 }
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: black;
-	text-decoration: none;
-}
-.menu-horizontal > li:hover{
-	background-color: #5e9188;
-	
-}
-.menu-vertical{
-    flex-wrap: wrap;
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background-color: #5e9188;
-    height: auto;
-    text-decoration: none;
+.nav-item:hover  {
+    background-color: #5e9188;
 }
 
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color:gray;
-}
-*/
-
-.menu-vertical li a{
-	display: block;
-	color: black;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
-}
-*/
 main{
    
     flex-wrap: wrap;
@@ -171,6 +179,9 @@ ul{
     height: 100%;
     justify-content:left;
 }
+.icono-footer{
+    width: 18px;
+}
 /*ESTILOS PAGINA CONTACTO*/
 #seccion-contacto{
     display: flex;
@@ -228,3 +239,50 @@ ul{
     text-decoration: underline;
     text-align: center;
 }
+
+@media (max-width: 575.98px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Small */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Medium) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Large  */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-group {
+        display: flex;
+        flex-direction: row;
+    }
+  }
+  
+  /* Estilos Extra Large */
+  @media (min-width: 1200px) {
+    .card-group {
+        display: flex;
+        flex-direction: row; 
+    }
+  }
+
+
+/*ESTILOS productos*/
+.card-img-top{
+    width: 450px;
+    height: 500px;
+}
+
